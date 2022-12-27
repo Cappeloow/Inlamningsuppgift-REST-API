@@ -26,5 +26,5 @@ PUT http://localhost:3000/game/59b796f5-d1fc-4bf6-a9d1-27622833fceb
 content-type: application/json
 
 {
-  "name": "It Takes Three"
+  "name": "It Takes Four"
 }

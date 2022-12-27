@@ -10,8 +10,38 @@
 </head>
 <body>
     <header>
-        <h1>GameStop</h1>
-        <p>POWER TO THE GAMERS</p>
+        <h1 id="headerh1">MY GAME LIBARY</h1>
+        <p id="headerP">POWER TO THE GAMERS</p>
     </header>
+    <div class="Content">
+        <div class="resultcontainer">
+            <div class="inputDiv">
+                <input type="text" placeholder="NameOfGame">
+                <button id="Search">Submit</button>
+            </div>    
+            <div class="resultDiv">
+                
+            </div>
+        </div>
+        <div class="everyGame"></div>
+        <div class="AddDiv">
+                <input type="text" id="Name" placeholder="Add name">
+                <input type="text" id="Age" placeholder="Add age">
+                <input type="text" id="typeOfGame" placeholder="Add genre">
+                <button id="add">Add Game</button>
+        </div>
+        
+        <div class="DeleteDiv">
+                <input type="text" id="DeleteInput" placeholder="ID to remove a game">
+                <button id="deleteData">Delete</button>
+        </div>
+        
+        <div class="updateDiv">
+                <input type="text" id="updateInput" placeholder="Update name">
+                <input type="text" id="byId" placeholder="Input the ID">
+                <button id="updateBtn">Update</button>
+        </div>
+    </div>
+   
 </body>
 </html>

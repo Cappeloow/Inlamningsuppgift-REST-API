@@ -1,0 +1,165 @@
+let btnSearch = document.querySelector("#Search");
+let input = document.querySelector("input");
+let result = document.querySelector(".resultDiv");
+
+
+/****************DISPLAYING EVERY OBJECT IN THE JSON.file******************/
+async function dataFromJson (){
+    const response = await fetch(`http://localhost:3000/game`)
+    const data = await response.json();
+    
+    window.onload = function() {
+      displayData(data);
+    }
+}
+
+  dataFromJson ();
+
+
+
+
+
+function displayData(data){
+  let everyGameDiv = document.querySelector(".everyGame")
+    let games =  data
+    for (const game of games) {
+    let h1 = document.createElement("h1");
+    let p = document.createElement("p");
+    p.innerHTML = `Age: ${game.age} <br> Genre: ${game.typeOf} <br>  ID:${game.id}`;
+    h1.innerHTML = game.name;
+    everyGameDiv.append(h1,p);
+    }
+}
+
+
+/*********SEARCHING FUNCTION ON SPECIFIC NAME******/
+async function dataFromUser (searchValue){
+    const response = await fetch(`http://localhost:3000/game/${searchValue}`)
+    const data = await response.json();
+    
+    return data;
+}
+
+
+btnSearch.addEventListener("click", async () => {
+
+
+
+    result.innerHTML= "";
+    let info = await dataFromUser(input.value);
+
+    if(info.name){
+        
+        let h1 = document.createElement("h1");
+        let p = document.createElement("p");
+        p.innerHTML = `Age: ${info.age} <br> Genre: ${info.typeOf} <br> ID:${info.id}`;
+        h1.innerHTML = info.name;
+    
+        result.append(h1,p);
+    }
+});
+
+
+/*****************END OF SEARCHING****************/
+
+/*********************ADDGAME TO SHELF ***************************/
+let btnAdd = document.querySelector("#add");
+console.log(btnAdd);
+
+let inputName = document.querySelector("#Name")
+let inputAge = document.querySelector("#Age")
+let inputType = document.querySelector("#typeOfGame")
+
+const postData = async () => {
+fetch('http://localhost:3000/game/addgame', {
+  method: 'POST',
+  headers: {
+    'Content-Type': 'application/json'
+  },
+  body: JSON.stringify({
+    name: inputName.value,
+    age: inputAge.value,
+    typeOf: inputType.value
+  })
+}).then(res => res.json())
+  .then(data => console.log(data));
+}
+
+btnAdd.addEventListener("click",postData);
+
+
+/**********************DELETE A SPECIFIC GAME IN SHELF************************/
+const btnDelete = document.querySelector("#deleteData");
+const inputDelete = document.querySelector("#DeleteInput"); 
+
+async function deleteData (input){
+  try {
+    const response = await fetch(`http://localhost:3000/game/${input}/delete`,{
+      method: 'DELETE'
+    });
+  
+    if (response.ok) {
+      const data = await response.json();
+      return data;
+
+    } else {
+      console.error(`Error ${response.status}: ${response.statusText}`);
+    }
+  } catch (error) {
+    console.error(error);
+  }
+}
+
+btnDelete.addEventListener("click", async ()=>{
+
+  await deleteData(inputDelete.value);
+  
+ 
+})
+
+
+/**************EDIT ANYTHING, NEEDED A SPECIFIC ID TO EDIT**************************/
+
+let btnUpdate = document.querySelector("#updateBtn");
+let updateName = document.querySelector("#updateInput");
+let inputId = document.querySelector("#byId");
+
+console.log(inputId,updateName);
+
+
+async function updateData (id, input) {
+  try {
+  
+    const response = await fetch(`http://localhost:3000/game/${id}`, {
+      method: 'PUT',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify({name:input})
+    });
+   
+    if (response.ok) {
+      
+      const data = await response.json();
+      console.log(data);
+    } else {
+  
+      console.error(`Error ${response.status}: ${response.statusText}`);
+    }
+  } catch (error) {
+  
+    console.error(error);
+  }
+}
+
+
+btnUpdate.addEventListener("click",async()=>{
+
+await updateData(inputId.value,updateName.value)
+
+});
+
+
+/*******************************/
+
+
