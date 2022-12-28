@@ -23,11 +23,21 @@ function displayData(data){
   let everyGameDiv = document.querySelector(".everyGame")
     let games =  data
     for (const game of games) {
+    let div = document.createElement("div");
+    div.className="gameCard";
     let h1 = document.createElement("h1");
     let p = document.createElement("p");
-    p.innerHTML = `Age: ${game.age} <br> Genre: ${game.typeOf} <br>  ID:${game.id}`;
+    let pID = document.createElement("p");
+    pID.innerText = game.id;
+    pID.className="pID";
+    
+    p.innerHTML = `Genre: ${game.typeOf} <br> Age: ${game.age}`;
     h1.innerHTML = game.name;
-    everyGameDiv.append(h1,p);
+
+    
+    div.append(h1,p,pID);
+    everyGameDiv.append(div);
+   
     }
 }
 
@@ -42,17 +52,16 @@ async function dataFromUser (searchValue){
 
 
 btnSearch.addEventListener("click", async () => {
-
-
-
     result.innerHTML= "";
+
+
+   
     let info = await dataFromUser(input.value);
 
     if(info.name){
-        
         let h1 = document.createElement("h1");
         let p = document.createElement("p");
-        p.innerHTML = `Age: ${info.age} <br> Genre: ${info.typeOf} <br> ID:${info.id}`;
+        p.innerHTML = `Genre: ${info.typeOf} <br> Age: ${info.age}`;
         h1.innerHTML = info.name;
     
         result.append(h1,p);
@@ -160,17 +169,37 @@ await updateData(inputId.value,updateName.value)
 });
 
 
-/***************DISPLAY NONE TO BLOCK****************/
+/*************DISPLAY-NONE FUNCTION FOR EVERY ELEMENT******************/
+
+
+let openAdd = document.querySelector("#OpenAdd");
+let openDelete = document.querySelector("#OpenDelete");
+let openUpdate = document.querySelector("#OpenUpdate");
+let addDiv = document.querySelector(".AddDiv")
+let updateDiv = document.querySelector(".updateDiv")
+let deleteDiv = document.querySelector(".DeleteDiv")
+
 function toggleVisibility(element) {
- 
-  if (element.style.visibility === "hidden") {
-    element.style.visibility = "visible";
+  if (element.style.display === "none") {
+    element.style.display = "flex";
   } else {
-    element.style.visibility = "hidden";
+    element.style.display = "none";
   }
 }
-let AddDiv = document.querySelector(".AddDiv")
-let btnOfShow = document.querySelector("#showAdd")
-btnOfShow.addEventListener("click",()=>{
-  toggleVisibility(AddDiv)
-});
+
+openAdd.addEventListener("click",()=>{
+  toggleVisibility(addDiv)
+  updateDiv.style.display="none";
+  deleteDiv.style.display="none";
+})
+openDelete.addEventListener("click",()=>{
+  toggleVisibility(deleteDiv)
+  addDiv.style.display="none";
+  updateDiv.style.display="none";
+})
+openUpdate.addEventListener("click",()=>{
+  toggleVisibility(updateDiv)
+  addDiv.style.display="none";
+  deleteDiv.style.display="none";
+})
+

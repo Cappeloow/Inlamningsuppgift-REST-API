@@ -1,6 +1,6 @@
 [
   {
-    "name": "Casper",
+    "name": "Pipeline",
     "age": "7",
     "typeOf": "Play",
     "id": "6f61a45f-ca96-4a30-bd97-54d95cd41a86"
@@ -12,21 +12,39 @@
     "id": "0f7b7643-25ea-481d-a4bb-8bb018fa2c1d"
   },
   {
-    "name": "",
-    "age": "",
-    "typeOf": "",
-    "id": "d7e08685-b2bd-4890-8ba6-6c10b7d1f2e1"
-  },
-  {
-    "name": "Casper",
-    "age": "17",
-    "typeOf": "kak",
-    "id": "755f6018-3d49-42db-a0bb-b33a00442b4a"
-  },
-  {
     "name": "World of Tanks",
     "age": "18",
     "typeOf": "War",
     "id": "e297654e-b05d-4771-b1ea-7173021daebd"
+  },
+  {
+    "name": "Tibia",
+    "age": "7",
+    "typeOf": "MMORPG",
+    "id": "68e5b5e7-dffd-4ff9-8065-6838e70b8d19"
+  },
+  {
+    "name": "LEAGUE OF LEGENDS",
+    "age": "7",
+    "typeOf": "MOBA",
+    "id": "402c1ec1-0b5d-41b3-b4fd-b5f23b677ef1"
+  },
+  {
+    "name": "World Of Warcraft",
+    "age": "12",
+    "typeOf": "MMORPG",
+    "id": "47cfc27d-dfd1-4322-baae-47c8639d1966"
+  },
+  {
+    "name": "Counter Strike",
+    "age": "12",
+    "typeOf": "Shooter",
+    "id": "47b3b5a8-38cf-4502-92f2-32115648a388"
+  },
+  {
+    "name": "Rust",
+    "age": "12",
+    "typeOf": "Survival 1st Shooter",
+    "id": "a9035063-9610-4d92-9a2f-f651f240fc41"
   }
 ]

@@ -4,44 +4,50 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GAMESHOP</title>
+    <title>Document</title>
     <script src="script.js" defer></script>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <h1 id="headerh1">MY GAME LIBARY</h1>
-        <p id="headerP">POWER TO THE GAMERS</p>
+        <h1>MY GAME LIBARY</h1>
+        <p>POWER TO THE GAMERS</p>
     </header>
-    <div class="Content">
-        <div class="resultcontainer">
-            <div class="inputDiv">
-                <input type="text" placeholder="NameOfGame" id="inputOfSearch">
-                <button id="Search">⟵</button>
-            </div>    
-            <div class="resultDiv">
-                
-            </div>
+<div class="container">   
+    <div class="dropdown">
+        <button class="dropdown-button">Menu</button>
+        <div class="dropdown-content">
+          <a href="#" id="OpenAdd">Add Game</a>
+          <a href="#" id="OpenDelete">Delete Game</a>
+          <a href="#" id="OpenUpdate">Update Game</a>
         </div>
-        <button id="showAdd">Add Game To shelf</button>
-        <div class="AddDiv">
-                <input type="text" id="Name" placeholder="Add name">
-                <input type="text" id="Age" placeholder="Add age">
-                <input type="text" id="typeOfGame" placeholder="Add genre">
-                <button id="add">Add Game</button>
-        </div>
-        
-        <div class="DeleteDiv">
-                <input type="text" id="DeleteInput" placeholder="ID to remove a game">
-                <button id="deleteData">Delete</button>
-        </div>
-        
-        <div class="updateDiv">
-                <input type="text" id="updateInput" placeholder="Update name">
-                <input type="text" id="byId" placeholder="Input the ID">
-                <button id="updateBtn">Update</button>
-        </div>
+      </div>
+    <div class="searchDiv">
+        <input type="text" placeholder="NameOfGame">
+        <button id="Search">Submit</button>
     </div>
+</div>    
+<div class="resultDiv"></div>        
+<section id="containerOfInputs">
+    <div class="AddDiv" style="display:none">
+        <input type="text" id="Name" placeholder="Add name">
+        <input type="text" id="Age" placeholder="Add age">
+        <input type="text" id="typeOfGame" placeholder="Add genre">
+        <button id="add">Add Game</button>
+    </div>
+
+    <div class="DeleteDiv" style="display:none">
+        <input type="text" id="DeleteInput" placeholder="ID to remove a game">
+        <button id="deleteData">Delete</button>
+    </div>
+
+    <div class="updateDiv" style="display:none">
+        <input type="text" id="updateInput" placeholder="Update name">
+        <input type="text" id="byId" placeholder="Input the ID">
+        <button id="updateBtn">Update</button>
+    </div>
+</section> 
+
     <div class="everyGame"></div>
 </body>
 </html>
