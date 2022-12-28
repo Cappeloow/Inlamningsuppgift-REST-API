@@ -17,7 +17,7 @@ content-type: application/json
 GET http://localhost:3000/game
 
 ###
-DELETE http://localhost:3000/game/15dc444c-2e92-49d2-b22f-4356a9252786/delete
+DELETE http://localhost:3000/game/15dc444c-2e92-49d2-b22f-4356a925278/delete
 
 ###
 

@@ -1,12 +1,9 @@
 # Description
 
-This is a fullstack project that utilizes JSON as its data storage system. The project allows for four methods of data manipulation: GET, PULL, DELETE, and POST. With these methods, it is easy to retrieve information from the database or add new information.
-
-The project features a virtual game shop, where users can browse and "purchase" games to add to their personal library. Users can also delete games from their library or edit their names if needed.
-
-
+This is a full-stack project that utilizes JSON as its data storage system to manage a game library. The project allows for four methods of data manipulation: GET, PUT, DELETE, and POST. These methods enable users to easily retrieve information from the database, add new games to the library, edit the names of existing games, delete games, and search for specific games.
 
 # Navigation
+In this game library, it is important to note that searches are case-sensitive and each game has a unique ID that can be used to edit or delete it. With these features, users can easily keep track of their games and make updates as needed. this game library management tool is an essential tool for organizing and maintaining your collection.
 
 
 
