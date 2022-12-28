@@ -160,6 +160,17 @@ await updateData(inputId.value,updateName.value)
 });
 
 
-/*******************************/
-
-
+/***************DISPLAY NONE TO BLOCK****************/
+function toggleVisibility(element) {
+ 
+  if (element.style.visibility === "hidden") {
+    element.style.visibility = "visible";
+  } else {
+    element.style.visibility = "hidden";
+  }
+}
+let AddDiv = document.querySelector(".AddDiv")
+let btnOfShow = document.querySelector("#showAdd")
+btnOfShow.addEventListener("click",()=>{
+  toggleVisibility(AddDiv)
+});

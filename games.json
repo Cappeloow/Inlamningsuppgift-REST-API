@@ -22,5 +22,11 @@
     "age": "17",
     "typeOf": "kak",
     "id": "755f6018-3d49-42db-a0bb-b33a00442b4a"
+  },
+  {
+    "name": "World of Tanks",
+    "age": "18",
+    "typeOf": "War",
+    "id": "e297654e-b05d-4771-b1ea-7173021daebd"
   }
 ]
