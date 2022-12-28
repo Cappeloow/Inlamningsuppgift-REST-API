@@ -12,12 +12,6 @@
     "id": "0f7b7643-25ea-481d-a4bb-8bb018fa2c1d"
   },
   {
-    "name": "World of Tanks",
-    "age": "18",
-    "typeOf": "War",
-    "id": "e297654e-b05d-4771-b1ea-7173021daebd"
-  },
-  {
     "name": "Tibia",
     "age": "7",
     "typeOf": "MMORPG",
@@ -46,5 +40,17 @@
     "age": "12",
     "typeOf": "Survival 1st Shooter",
     "id": "a9035063-9610-4d92-9a2f-f651f240fc41"
+  },
+  {
+    "name": "It takes Two ",
+    "age": "7",
+    "typeOf": "Puzzle",
+    "id": "32f8880c-b932-4281-be69-71aa31b070e3"
+  },
+  {
+    "name": "Apex Legends",
+    "age": 7,
+    "typeOf": "FPS",
+    "id": "fb479b12-a888-4df8-9554-eecf08c04589"
   }
 ]

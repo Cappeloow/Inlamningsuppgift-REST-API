@@ -1,4 +1,4 @@
-GET http://localhost:3000/game/Medivia
+GET http://localhost:3000/game/Apex
 
 ###
 
@@ -8,23 +8,23 @@ POST http://localhost:3000/game/addgame
 content-type: application/json
 
 {
-  "name":"It Takes Two",
+  "name":"Apex",
   "age": 7,
-  "typeOf": "Family Game"
+  "typeOf": "FPS"
 }
 ###
 
 GET http://localhost:3000/game
 
 ###
-DELETE http://localhost:3000/game/15dc444c-2e92-49d2-b22f-4356a925278/delete
+DELETE http://localhost:3000/game/e297654e-b05d-4771-b1ea-7173021daebd/delete
 
 ###
 
 
-PUT http://localhost:3000/game/59b796f5-d1fc-4bf6-a9d1-27622833fceb
+PUT http://localhost:3000/game/fb479b12-a888-4df8-9554-eecf08c04589
 content-type: application/json
 
 {
-  "name": "It Takes Four"
+  "name": "Apex Legends"
 }
