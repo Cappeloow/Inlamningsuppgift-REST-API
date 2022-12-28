@@ -6,6 +6,13 @@ The project features a virtual game shop, where users can browse and "purchase" 
 
 
 
+# Navigation
+
+
+
+
+
+
 # Krav för godkänt:
 
 Projektet innehåller minst 4 st. endpoints (GET, POST, PUT & DELETE för en resurs)
@@ -22,3 +29,4 @@ Uppgiften lämnas in i tid!
 Alla punkter för godkänt är uppfyllda
 Ett klient-gränssnitt skall byggas för att anropa API:ets alla olika endpoints och presentera datan, redigeringsformulär skall fyllas i med befintlig information.
 Ytterligare en GET endpoint skall läggas till där det går att hämta ett specifikt objekt
+
