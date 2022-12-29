@@ -1,9 +1,11 @@
-GET http://localhost:3000/game/Apex
-
-###
+#SEARCH##
 
 
+GET http://localhost:3000/game/Tibia
 
+
+
+###CREATE####
 POST http://localhost:3000/game/addgame
 content-type: application/json
 
@@ -12,16 +14,17 @@ content-type: application/json
   "age": 7,
   "typeOf": "FPS"
 }
-###
 
+
+##GET ALL GAMES###
 GET http://localhost:3000/game
 
-###
+###DELETE GAME by ID##
 DELETE http://localhost:3000/game/e297654e-b05d-4771-b1ea-7173021daebd/delete
 
 ###
 
-
+##EDIT A GAME'S NAME###
 PUT http://localhost:3000/game/fb479b12-a888-4df8-9554-eecf08c04589
 content-type: application/json
 
