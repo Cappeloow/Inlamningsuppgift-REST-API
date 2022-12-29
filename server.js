@@ -91,7 +91,6 @@ app.delete('/game/:id/delete', function(req, res) {
   } else {
     return res.status(404).send(`There is no game with that ID`);
   }
-
 });
 
 

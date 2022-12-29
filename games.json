@@ -1,17 +1,5 @@
 [
   {
-    "name": "Pipeline",
-    "age": "7",
-    "typeOf": "Play",
-    "id": "6f61a45f-ca96-4a30-bd97-54d95cd41a86"
-  },
-  {
-    "name": "WW2",
-    "age": 18,
-    "typeOf": "Action",
-    "id": "0f7b7643-25ea-481d-a4bb-8bb018fa2c1d"
-  },
-  {
     "name": "Tibia",
     "age": "7",
     "typeOf": "MMORPG",
@@ -52,5 +40,17 @@
     "age": 7,
     "typeOf": "FPS",
     "id": "fb479b12-a888-4df8-9554-eecf08c04589"
+  },
+  {
+    "name": "Guild Wars 1",
+    "age": "12",
+    "typeOf": "ORPG",
+    "id": "1bb8154c-7364-4243-824e-aa8667ce7198"
+  },
+  {
+    "name": "Fable",
+    "age": "12",
+    "typeOf": "RPG",
+    "id": "2ec0fac3-c5c5-4225-a5db-0936dddfc7e5"
   }
 ]

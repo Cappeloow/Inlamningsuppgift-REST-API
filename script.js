@@ -28,17 +28,24 @@ function displayData(data){
     let h1 = document.createElement("h1");
     let p = document.createElement("p");
     let pID = document.createElement("p");
-    pID.innerText = game.id;
+    pID.innerText = "ID";
     pID.className="pID";
     
     p.innerHTML = `Genre: ${game.typeOf} <br> Age: ${game.age}`;
     h1.innerHTML = game.name;
 
-    
+    document.execCommand("copy");
+
     div.append(h1,p,pID);
     everyGameDiv.append(div);
    
+      pID.addEventListener("mouseover",()=>{
+      pID.innerText = game.id;
+      
+      })
+      
     }
+    
 }
 
 

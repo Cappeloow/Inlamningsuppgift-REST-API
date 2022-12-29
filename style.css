@@ -11,10 +11,11 @@ body{
 header{
     color:#92D986;
     background: linear-gradient(180deg, rgba(217, 217, 217, 0.05) 0%, rgba(217, 217, 217, 0.040) 100%);
-    border: 1px solid #000000;
     height:80px;
     text-align:center;
     padding-top:10px;
+    letter-spacing:3px;
+    border-bottom: 1px solid whitesmoke;
 }
 /***********************SECTION OF INPUTS********************************/
 .container{
@@ -183,6 +184,11 @@ header{
   .gameCard .pID{
     color:#92D986;
     font-size:10px;
+    transition:1s;
+  }
+  .gameCard .pID:hover{
+    font-size:11px;
+    transition: 1s;
   }
   
 
