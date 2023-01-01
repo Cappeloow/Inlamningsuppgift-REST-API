@@ -16,7 +16,7 @@ content-type: application/json
 }
 
 
-##GET ALL GAMES###
+###GET ALL GAMES###
 GET http://localhost:3000/game
 
 ###DELETE GAME by ID##
