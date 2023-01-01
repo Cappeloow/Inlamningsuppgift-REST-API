@@ -2,7 +2,7 @@
 
 # START THE PROJECT
 
-To start the project you'll have to download the file and unzip it or just clone it directly from the github repo. Open the terminal and run "npm install express" (if you've #downloaded it you have to use run "npm install" aswell.), then run "nodemon server.js" to open the server. Now you are ready, just use go to the index.html and open live server to discover my small fullstack-project.
+To start the project you'll have to download the file and unzip it or just clone it directly from the github repo. Open the terminal and run "npm install", then run "nodemon server.js" to open the server. Now you are ready, just use go to the index.html and open live server to discover my small fullstack-project.
 
 
 # Description
